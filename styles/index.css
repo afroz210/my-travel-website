@@ -11,7 +11,7 @@
 }
 
 .container {
-  width: 90%;
+  max-width: 1170px;
   margin: 5rem auto;
   border-radius: 1rem;
 }
@@ -130,3 +130,69 @@ button {
   border: none;
   cursor: pointer;
 }
+
+/* our popular tour section */
+.popular-section{
+  justify-content: space-between;
+}
+.text-content{
+  width: 577px;
+}
+.text-content h3{  
+  text-align: left;
+}
+.popular-space{
+  padding-top: 2rem;
+  line-height: 24px;
+}
+.popular-btn{
+  width: 174px;
+  height: 52px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+.image{
+  width: 540px;
+}
+
+ /* Choose your destination section */
+.your-destination img{
+  width: 100%;
+  height: 300px;
+  filter: brightness(70%);
+}
+.destination-box p{
+  text-align: center;
+  padding-top: 1.5rem;
+ }
+
+.row-1,
+.row-2,
+.row-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  gap: 1rem;
+ }
+
+.row-2{
+  grid-template-columns: 0.8fr 1fr 0.7fr;
+}
+
+.row-3{
+  grid-template-columns: 0.75fr 1fr;
+}
+.country-card{
+  position: relative;
+ }
+
+.country{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 800;
+  transform: translate(-50% , -50%);
+ }

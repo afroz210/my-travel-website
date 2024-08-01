@@ -196,3 +196,118 @@ button {
   font-weight: 800;
   transform: translate(-50% , -50%);
  }
+
+ /* why choose us section */
+
+ .why-choose p{
+  text-align: center;
+  margin-top: 1rem;
+ }
+ .choose-row-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:2rem;
+  margin-bottom: 1.5rem;
+ }
+ .hotels{
+  background-color:rgba(251, 181, 99, 0.05);
+  border:1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+ }
+ .hotels p ,
+ .map p ,
+ .price p{
+  text-align: left;
+  margin-top: 10px;
+ }
+ .hotels img ,
+ .map img ,
+ .price img{
+  margin-bottom: 10px;
+ }
+
+ .map{
+  background-color:rgba(41, 206, 246, 0.05);
+  border:1px solid rgba(41, 206, 246, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+ }
+ 
+ .choose-row-2{
+  width: 573px;
+}
+
+.choose-row-2-box{
+  justify-content: center;
+} 
+ .price{
+  background-color: rgba(233, 68, 68, 0.05);
+  border:1px solid rgba(233, 68, 68, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+ }
+
+ /* deal & discount section */
+
+ .deal-discount p{
+  text-align: center;
+  margin-top: 1rem;
+ }
+
+ .img-position{
+  position: relative;
+ }
+
+ .deal-position-1 , 
+ .deal-position-3{
+  position: absolute;
+  width: 450px;
+  background-color:rgba(255, 255, 255 , 0.8);
+  border: 1px solid rgb(255, 255, 255 , 0.8);
+  border-radius: 1rem;
+  padding: 60px;
+  margin-top: -450px;
+  margin-left: 540px;
+  backdrop-filter: blur(2px);
+  }
+
+  .deal-position-2{
+    position: absolute;
+    width: 450px;
+    background-color:rgba(255, 255, 255 , 0.8);
+    border: 1px solid rgb(255, 255, 255 , 0.8);
+    border-radius: 1rem;
+    padding: 60px;
+    margin-top: -450px;
+    margin-left: 55px;
+    backdrop-filter: blur(2px);
+  }
+
+  .tour-gap{
+    margin-top: 1.25rem;
+  }
+
+ .tour-info p , h5{
+  text-align: left;
+  margin-bottom: 1rem;
+ }
+
+ .tour-info h4{
+  font-weight: 800;
+  font-size: 1.5rem;
+ }
+ .tour-time{
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 386px;
+ }
+ .tour-price , .time-btn{
+  font-size: 1.2rem;
+  font-weight: 800;
+ }
+ .time-btn{
+  width: 150px;
+  height: 52px;
+  border-radius: 8px;
+ }

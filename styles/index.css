@@ -78,6 +78,10 @@ li {
   cursor: pointer;
 }
 
+.ham-burger{
+  display: none;
+}
+
 /* banner */
 .explore-your-travel {
   background-image: linear-gradient(180deg,
@@ -134,10 +138,10 @@ button {
 /* our popular tour section */
 .popular-section {
   justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .text-content {
-  width: 577px;
 }
 
 .text-content h3 {
@@ -158,7 +162,7 @@ button {
 }
 
 .image {
-  width: 540px;
+  width: 100%;
 }
 
 /* Choose your destination section */
@@ -345,6 +349,7 @@ h5 {
 /* A simple perfect place section */
 
 .simple-perfect-place-box{
+  justify-content: space-between;
   gap: 3rem;
 }
 
@@ -373,7 +378,7 @@ h5 {
 }
 
 .watch-img-position img{
-  width: 620px;
+  height: 100%;
 }
 
 .watch-position{
@@ -431,8 +436,8 @@ h5 {
 }
 
 .newsletter-img img{
-  width: 650px;
-  height: 425px;
+  width: 100%;
+  height: 100%;
 }
 
 .newsletter-position{
@@ -442,7 +447,7 @@ h5 {
   text-align: center;
   border-radius: 1rem ;
   margin-top: -178px;
-  margin-left: 273px;
+  margin-left: 252px;
   transform: rotate(-19.63deg);
   
 }
@@ -466,7 +471,6 @@ footer{
 }
 
 .footer-container{
-  width: 770px;
   margin: 5rem auto;
   border-radius: 1rem;
 }
@@ -485,17 +489,49 @@ footer{
 .footer-description{
  text-align: center;
  margin-bottom: 2rem;
+ margin: 0 18.75rem;
 }
 
 .footer-icon{
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .footer-container hr{
   border: 1px solid rgba(19, 19, 24, 0.1);
   margin-bottom: 2rem;
+}
+
+
+/* Responsive Query */
+
+@media screen and (max-width: 600px) {
+   
+  .nav-options{
+    display: none;
+  }
+  .ham-burger{
+    display: block;
+    font-size: 26px;
+  }
+  .h3{
+    font-size: 28px;
+  }
+  /* section 1 */
+  .travel-inputs ,
+  .popular-section ,
+  .simple-perfect-place-box ,
+  .newsletter-box{
+    flex-direction: column;
+  }
+
+  .row-1 ,
+  .row-2 ,
+  .row-3 ,
+  .choose-row-1{
+    grid-template-columns: 1fr;
+  }
 }
 
 
